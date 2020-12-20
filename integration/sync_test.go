@@ -122,7 +122,7 @@ func (s *SyncSuite) TestDocker2DirTaggedAll(c *check.C) {
 	c.Assert(err, check.IsNil)
 	defer os.RemoveAll(tmpDir)
 
-	// FIXME: It would be nice to use one of the local Docker registries instead of neeeding an Internet connection.
+	// FIXME: It would be nice to use one of the local Docker registries instead of needing an Internet connection.
 	image := "busybox:latest"
 	imageRef, err := docker.ParseReference(fmt.Sprintf("//%s", image))
 	c.Assert(err, check.IsNil)
