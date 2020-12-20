@@ -19,7 +19,7 @@ Skopeo works with API V2 container image registries such as [docker.io](https://
    For example you can copy images from one registry to another, without requiring privilege.
  * Inspecting a remote image showing its properties including its layers, without requiring you to pull the image to the host.
  * Deleting an image from an image repository.
- * Syncing an external image repository to an internal registy for air-gapped deployments.
+ * Syncing an external image repository to an internal registry for air-gapped deployments.
  * When required by the repository, skopeo can pass the appropriate credentials and certificates for authentication.
 
  Skopeo operates on the following image and repository types:
