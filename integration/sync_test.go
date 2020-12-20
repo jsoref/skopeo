@@ -578,7 +578,7 @@ func (s *SyncSuite) TestFailsWithDockerSourceUnauthorized(c *check.C) {
 }
 
 func (s *SyncSuite) TestFailsWithDockerSourceNotExisting(c *check.C) {
-	repo := path.Join(v2DockerRegistryURL, "imagedoesdotexist")
+	repo := path.Join(v2DockerRegistryURL, "imagedoesnotexist")
 	tmpDir, err := ioutil.TempDir("", "skopeo-sync-test")
 	c.Assert(err, check.IsNil)
 	defer os.RemoveAll(tmpDir)
