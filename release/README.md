@@ -11,7 +11,7 @@ Travis workflow has 3 major pieces:
 - `image-build-push` - build and push container images with several Travis jobs running in parallel to build images for several architectures (linux/amd64, linux/s390x, linux/ppc64le). Build part is done for each PR, push part is executed only in case of cron job or master branch update.
 - `manifest-multiarch-push` - create and push image manifests, which consists of architecture specific images from previous step. Executed only in case of cron job or master branch update.
 
-## Ways to have full worklow run
+## Ways to have full workflow run
 - [cron job](https://docs.travis-ci.com/user/cron-jobs/#adding-cron-jobs)
 - Trigger build from Travis CI
 - Update code in master branch
