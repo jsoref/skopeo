@@ -26,7 +26,7 @@ Several environment variables are used to customize image names and keep private
 - `CONTAINERS_QUAY_USERNAME` and `CONTAINERS_QUAY_PASSWORD` are credentials to push images to `quay.io/containers/skopeo` repos, and require the credentials to have write permissions. These variables should be specified in [Travis](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings).
 
 Variables in .travis.yml
-- `MULTIARCH_MANIFEST_ARCHITECTURES` is a list with architecture shortnames, to apprear in final multiarch manifest. The values should fit to architectures used in the `image-build-push` Travis step.
+- `MULTIARCH_MANIFEST_ARCHITECTURES` is a list with architecture shortnames, to appear in final multiarch manifest. The values should fit to architectures used in the `image-build-push` Travis step.
 - `STABLE_IMAGE`, `EXTRA_STABLE_IMAGE` are image names to publish stable Skopeo.
 - `UPSTREAM_IMAGE` is an image name to publish upstream Skopeo.
 
