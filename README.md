@@ -122,7 +122,7 @@ $ skopeo inspect --config docker://registry.fedoraproject.org/fedora:latest  | j
   ]
 }
 ```
-#### Show unverifed image's digest
+#### Show unverified image's digest
 ```console
 $ skopeo inspect docker://registry.fedoraproject.org/fedora:latest | jq '.Digest'
 "sha256:655721ff613ee766a4126cb5e0d5ae81598e1b0c3bcf7017c36c4d72cb092fe9"
