@@ -1,0 +1,14 @@
+^LICENSE$
+^\.github/
+ignore$
+/fixtures/
+\.gpg$
+\.lock$
+\.lzma$
+\.signature$
+\.sum$
+\.svg$
+\.enc$
+\.xz$
+^vendor/
+\.mod$

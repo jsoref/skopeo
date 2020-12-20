@@ -1,0 +1,23 @@
+# sha256
+sha256:[0-9a-f]{64}
+\b[0-9a-zA-Z]{50,64}\b
+\b[0-9a-fA-F]{6,}\b
+
+# sha-1
+"[0-9a-f]{40}"
+\b[0-9a-f]{40}\b
+
+# hex digits including css/html color classes:
+(?:[\\0][xX]|\\u|[uU]\+|#|\%23)[0-9a-fA-FgGrR]{2,}[uU]?[lL]{0,2}\b
+# ignore long runs of a single character:
+\b([A-Za-z])\1{3,}\b
+
+# bcrypt
+\$2y\$\d\d\$[0-9a-zA-Z/]{53}\b
+
+# tar arguments
+\b(?:)tar(?:\s+-[a-zA-Z]+|\s[a-z]+)+
+
+# <word>vX
+v\d+(?:\b|(?=[a-z]))
+
