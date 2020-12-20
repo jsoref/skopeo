@@ -1147,7 +1147,7 @@ func (s *SkopeoSuite) TestCopySrcAndDestWithAuth(c *check.C) {
 	assertSkopeoSucceeds(c, "", "--tls-verify=false", "copy", "--src-creds=testuser:testpassword", "--dest-creds=testuser:testpassword", fmt.Sprintf("docker://%s/busybox:latest", s.regV2WithAuth.url), fmt.Sprintf("docker://%s/test:auth", s.regV2WithAuth.url))
 }
 
-func (s *CopySuite) TestCopyNoPanicOnHTTPResponseWOTLSVerifyFalse(c *check.C) {
+func (s *CopySuite) TestCopyNoPanicOnHTTPResponseWithoutTLSVerifyFalse(c *check.C) {
 	const ourRegistry = "docker://" + v2DockerRegistryURL + "/"
 
 	// dir:test isn't created beforehand just because we already know this could
